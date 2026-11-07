@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Matcha</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+<h1>Política de privacidad</h1>
+<p class="tenue">Matcha (uso personal) · Vigente desde el 7 de noviembre de 2026</p>
+
+<nav>
+  <a href="./">Inicio</a>
+  <a href="privacidad.html">Política de privacidad</a>
+  <a href="condiciones.html">Condiciones del servicio</a>
+</nav>
+
+<p>Esta política describe cómo el cliente OAuth “Matcha” trata los datos de Google.
+Lo usa únicamente su dueño, Raúl Vaccaro, con su propia cuenta de Gmail.</p>
+
+<h2>Datos a los que accede</h2>
+<p>Con el permiso <code>https://mail.google.com/</code>, el programa de correo
+<a href="https://github.com/floatpane/matcha">matcha</a> accede por IMAP y SMTP a la cuenta
+de Gmail autorizada: lee los mensajes y carpetas, y envía los correos que el dueño escribe.</p>
+
+<h2>Dónde se guardan</h2>
+<ul>
+  <li>Los mensajes que matcha descarga se guardan en una caché local, en el computador del dueño.</li>
+  <li>Los tokens de OAuth se guardan en archivos locales que solo puede leer el usuario del sistema.</li>
+  <li>No existe ningún servidor propio: los datos viajan solo entre el computador del dueño y Google.</li>
+</ul>
+
+<h2>Con quién se comparten</h2>
+<p>Con nadie. Los datos de Google no se venden, no se transfieren a terceros, no se usan
+para publicidad y no se usan para entrenar modelos de inteligencia artificial.</p>
+
+<h2>Uso limitado</h2>
+<p>El uso de la información recibida de las APIs de Google cumple la
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de
+usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
+
+<h2>Cómo revocar el acceso</h2>
+<p>El acceso se puede revocar en cualquier momento desde
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+o con el comando <code>matcha oauth revoke</code>. Al revocarlo, matcha deja de poder
+acceder a la cuenta; la caché local se puede borrar eliminando la carpeta de caché de matcha.</p>
+
+<h2>Cambios</h2>
+<p>Si esta política cambia, se publicará aquí con una nueva fecha de vigencia.</p>
+
+<section class="en" id="en" lang="en">
+<h2>Privacy policy (English)</h2>
+<p>“Matcha” is a personal Google OAuth client used only by its owner, Raúl Vaccaro, with his
+own Gmail account. Using the <code>https://mail.google.com/</code> scope, the open-source
+mail client matcha reads and sends mail over IMAP and SMTP. Downloaded messages are cached
+locally and OAuth tokens are stored in local files readable only by the owner's system user.
+There is no server: data travels only between the owner's computer and Google.
+Google user data is not sold, not transferred to third parties, not used for advertising and
+not used to train AI models. Use of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+User Data Policy</a>, including the Limited Use requirements. Access can be revoked at any time at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+</section>
+
+<footer>Contacto: <a href="mailto:vaccaro.raul@gmail.com">vaccaro.raul@gmail.com</a></footer>
+</main>
+</body>
+</html>
